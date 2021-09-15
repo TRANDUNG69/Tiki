@@ -381,13 +381,14 @@ ul {
   font-size: 14px;
 }
 #main .header .container .middle-wrap .middle-left-container .form-search .form-search-content .search-auto .footer .featured-category .inner {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
 }
 #main .header .container .middle-wrap .middle-left-container .form-search .form-search-content .search-auto .footer .featured-category .inner a.item {
   margin-top: 5px;
   text-align: center;
-  width: 143px;
+  width: 142.5px;
   padding: 5px 0;
 }
 #main .header .container .middle-wrap .middle-left-container .form-search .form-search-content .search-auto .footer .featured-category .inner a.item .thumb-wrap .thumb img {

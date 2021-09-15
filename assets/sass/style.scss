@@ -397,12 +397,13 @@ ul{
                                             }
                                         }
                                         .inner{
+                                            box-sizing: border-box;
                                             display: flex;
                                             flex-wrap: wrap;
                                             a.item{
                                                 margin-top: 5px;
                                                 text-align: center;
-                                                width: 143px;
+                                                width: 142.5px;
                                                 padding: 5px 0;
                                                 .thumb-wrap{
                                                     .thumb{
