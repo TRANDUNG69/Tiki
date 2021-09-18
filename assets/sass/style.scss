@@ -645,7 +645,7 @@ ul{
 
     }
     .bg-dark{
-        height: 500%;
+        height: 700%;
         width: 100%;
         position: absolute;
         background-color: rgba(0, 0, 0, 0.5);
@@ -1558,7 +1558,6 @@ ul{
         }
     }
     .Infinite-scroll{
-        
         .Infinite-scroll-container{
             width: 1270px;
             margin: auto;
@@ -1622,7 +1621,7 @@ ul{
                     width: 1240px;
                     position: fixed;
                     top: 0;
-                    z-index: 10;
+                    z-index: 1;
                     background-color: rgb(244, 244, 244);
                 }
                 .home_infinity_tab_content{
