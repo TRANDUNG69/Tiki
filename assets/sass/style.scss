@@ -1557,4 +1557,214 @@ ul{
             }
         }
     }
+    .Infinite-scroll{
+        
+        .Infinite-scroll-container{
+            width: 1270px;
+            margin: auto;
+            .Infinite-scroll-content{
+                padding: 0 15px;
+                .header-scroll {
+                    transition: 0.3s ease;
+                    background-color: rgb(244, 244, 244);
+                    .header-title{
+                        display: flex;
+                        padding: 10px 16px;
+                        background-color: white;
+                        flex: 1 1 0%;
+                        font-size: 20px;
+                        line-height: 28px;
+                        text-transform: capitalize;
+                        margin-bottom: 4px;
+                        border-radius: 4px;
+                    }
+                    .header-tab{
+                        display: grid;
+                        margin-bottom: 4px;
+                        overflow: auto;
+                        position: relative;
+                        grid-template-columns: repeat(8, 1fr);
+                        column-gap: 4px;
+                        .tab{
+                            background-color: white;
+                            display: flex;
+                            flex-direction: column;
+                            -webkit-box-align: center;
+                            align-items: center;
+                            flex-shrink: 0;
+                            cursor: pointer;
+                            min-height: 78px;
+                            border-radius: 4px;
+                            padding: 4px 8px;
+                            .img-container{
+                                img{
+                                    width: 48px;
+                                    height: 48px;
+                                }
+                            }
+                            .tab-text{
+                                color: rgb(13, 92, 182);
+                                padding-top: 4px;
+                                font-size: 13px;
+                                line-height: 18px;
+                                text-align: center;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 1;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                word-break: break-word;
+                            }
+                        }
+                    }
+                }
+                .header-scroll.sticky{
+                    width: 90%;
+                    position: fixed;
+                    top: 0;
+                    z-index: 10;
+                    background-color: rgb(244, 244, 244);
+                }
+                .home_infinity_tab_content{
+                    background-color: rgb(255, 255, 255);
+                    .content{
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-self: stretch;
+                        background-color: rgb(255, 255, 255);
+                        border-top: 1px solid rgb(242, 242, 242);
+                        .product-item{
+                            width: 16.6667%;
+                            box-sizing: border-box;
+                            padding-bottom: 1%;
+                            a{
+                                display: flex;
+                                align-items: center;
+                                span{
+                                    padding-bottom: 2%;
+                                    display: flex;
+                                    padding: 12px;
+                                    color: rgb(56, 56, 61);
+                                    text-decoration: none;
+                                    flex-direction: column;
+                                    -webkit-box-pack: justify;
+                                    justify-content: space-between;
+                                    width: 100%;
+                                    height: 100%;
+                                    div{
+                                        .thumbnail{
+                                            position: relative;
+                                            .thumbnail-wrapper{
+                                                position: absolute;
+                                                bottom: 1%;
+                                            }
+                                            
+                                        }
+                                        .infor {
+                                            display: block;
+                                            .name {
+                                                span.name-text{
+                                                    padding: 0;
+                                                    width: 100%;
+                                                    font-size: 13px;
+                                                    font-weight: 400;
+                                                    line-height: 20px;
+                                                    word-wrap: break-word;
+                                                    overflow: hidden;
+                                                    display: -webkit-box;
+                                                    text-overflow: ellipsis;
+                                                    -webkit-box-orient: vertical;
+                                                    -webkit-line-clamp: 2;
+                                                }
+                                            }
+                                            .quantity-star{
+                                                .star{
+                                                    display: inline;
+                                                    
+                                                    i{
+                                                        color: rgb(253, 216, 54);
+                                                        font-size: 12px;
+                                                    }
+                                                }
+                                                .quantity{
+                                                    display: inline;
+                                                    color: rgb(120, 120, 120);
+                                                    line-height: normal;
+                                                    font-size: 11px;
+                                                    border-left: 1px solid rgb(120, 120, 120);
+                                                    padding-left: 3px;
+                                                }
+                                                .price-discount{
+                                                    display: flex;
+                                                    .price-discount__price{
+                                                        
+                                                        color: rgb(255, 66, 78);
+                                                        font-size: 16px;
+                                                        line-height: 24px;
+                                                        font-weight: 550;
+                                                        font-family: Roboto,
+                                                        Helvetica,
+                                                        Arial,
+                                                        sans-serif;
+                                                        b{
+                                                            position: relative;
+                                                            font-size: 23px;
+                                                            font-weight: 550;
+                                                            top: 4px;
+                                                            left: 1%;
+                                                        }
+                                                    }
+                                                    .price-discount__discount{
+                                                        position: relative;
+                                                        bottom: -6px;
+                                                        padding: 0px 2px;
+                                                        // line-height: 14px;
+                                                        height: 15px;
+                                                        text-align: center;
+                                                        font-size: 12px;
+                                                        font-weight: 400;
+                                                        margin-left: 8px;
+                                                        border: 1px solid rgb(255, 66, 78);
+                                                        border-radius: 2px;
+                                                        background-color: rgb(255, 240, 241);
+                                                        color: rgb(255, 66, 78);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                &:hover{
+                                    box-shadow: rgb(0 0 0 / 10%) 0px 0px 20px;
+                                }
+                            }
+                        }
+                    }
+                    .btn{
+                        margin-top: 12px;
+                        padding-bottom: 20px;
+                        width: 240px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        button{
+                            font-weight: 550;
+                            cursor: pointer;
+                            width: 100%;
+                            padding: 8px 12px;
+                            border-radius: 4px;
+                            background-color: rgba(255, 255, 255);
+                            border: 1px solid rgb(13, 92, 182);
+                            color: rgb(13, 92, 182);
+                            font-size: 13px;
+                            text-align: center;
+                            &:hover{
+                                color: rgb(255, 255, 255);
+                                background-color: rgb(13, 92, 182);
+                                border-color: rgb(13, 92, 182);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
