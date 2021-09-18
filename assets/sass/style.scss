@@ -7,7 +7,7 @@ html{
     Helvetica,
     Arial,
     sans-serif;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     background-color: rgb(244, 244, 244);
 
 }
@@ -1565,7 +1565,7 @@ ul{
             .Infinite-scroll-content{
                 padding: 0 15px;
                 .header-scroll {
-                    transition: 0.3s ease;
+                    transition: 1s ease;
                     background-color: rgb(244, 244, 244);
                     .header-title{
                         display: flex;
@@ -1618,7 +1618,8 @@ ul{
                     }
                 }
                 .header-scroll.sticky{
-                    width: 90%;
+                    // height: 100%;
+                    width: 1240px;
                     position: fixed;
                     top: 0;
                     z-index: 10;
@@ -1738,6 +1739,10 @@ ul{
                                 }
                             }
                         }
+                    }
+                    .content.mt-150{
+                        position: relative;
+                        top: 150px;
                     }
                     .btn{
                         margin-top: 12px;

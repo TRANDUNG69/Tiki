@@ -5,7 +5,7 @@
 
 html {
   font-family: Roboto, Helvetica, Arial, sans-serif;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   background-color: #f4f4f4;
 }
 
@@ -1462,7 +1462,7 @@ ul {
   padding: 0 15px;
 }
 #main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .header-scroll {
-  transition: 0.3s ease;
+  transition: 1s ease;
   background-color: #f4f4f4;
 }
 #main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .header-scroll .header-title {
@@ -1513,7 +1513,7 @@ ul {
   word-break: break-word;
 }
 #main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .header-scroll.sticky {
-  width: 90%;
+  width: 1240px;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -1620,6 +1620,10 @@ ul {
 }
 #main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .home_infinity_tab_content .content .product-item a:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+}
+#main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .home_infinity_tab_content .content.mt-150 {
+  position: relative;
+  top: 150px;
 }
 #main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .home_infinity_tab_content .btn {
   margin-top: 12px;
