@@ -1891,7 +1891,7 @@ ul {
                     width: 1240px;
                     position: fixed;
                     top: 0;
-                    z-index: 1;
+                    z-index: 3;
                     background-color: rgb(244, 244, 244);
                 }
                 .header-scroll.sticky.mt-50{
@@ -2064,15 +2064,22 @@ ul {
                             position: absolute;
                             top: 0;
                             visibility: visible;
+                            z-index: 1;
                         }
-
                         #sale,
                         #deal,
                         #extremely_cheap,
-                        #freeship {
+                        #freeship{
                             position: absolute;
                             top: 0;
                             visibility: hidden;
+                            
+                        }
+                        #women_fashion{
+                            // position: absolute;
+                            // top: 0;
+                            // visibility: hidden;
+                            // display: none;
                         }
                     }
 
