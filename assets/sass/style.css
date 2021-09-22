@@ -1488,6 +1488,7 @@ ul {
        column-gap: 4px;
 }
 #main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .header-scroll .header-tab .tab {
+  display: none;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -1514,8 +1515,18 @@ ul {
   display: -webkit-box;
   word-break: break-word;
 }
-#main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .header-scroll .header-tab .tab.border {
-  border: 1px solid red;
+#main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .header-scroll .header-tab .tab.active {
+  background-color: white;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  min-height: 78px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  display: block;
+  border: 1px solid #0d5cb6;
 }
 #main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .header-scroll.sticky {
   width: 1240px;
@@ -1531,10 +1542,8 @@ ul {
 #main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .home_infinity_tab_content {
   background-color: white;
 }
-#main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .home_infinity_tab_content .content {
-  position: relative;
-}
 #main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .home_infinity_tab_content .content .tab-content {
+  display: none !important;
   display: flex;
   flex-wrap: wrap;
   align-self: stretch;
@@ -1658,19 +1667,9 @@ ul {
   background-color: #0d5cb6;
   border-color: #0d5cb6;
 }
-#main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .home_infinity_tab_content .content #home {
-  position: absolute;
-  top: 0;
-  visibility: visible;
-  z-index: 1;
-}
-#main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .home_infinity_tab_content .content #sale,
-#main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .home_infinity_tab_content .content #deal,
-#main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .home_infinity_tab_content .content #extremely_cheap,
-#main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .home_infinity_tab_content .content #freeship {
-  position: absolute;
-  top: 0;
-  visibility: hidden;
+#main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .home_infinity_tab_content .content .tab-content.active {
+  display: block;
+  display: flex !important;
 }
 #main .Infinite-scroll .Infinite-scroll-container .Infinite-scroll-content .home_infinity_tab_content .content.mt-150 {
   position: relative;

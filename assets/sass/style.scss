@@ -1847,6 +1847,7 @@ ul {
                         column-gap: 4px;
 
                         .tab {
+                            display: none;
                             background-color: white;
                             display: flex;
                             flex-direction: column;
@@ -1879,32 +1880,45 @@ ul {
                             }
                         }
 
-                        .tab.border {
-                            border: 1px solid red;
+                        .tab.active {
+                            background-color: white;
+                            display: flex !important;
+                            flex-direction: column;
+                            -webkit-box-align: center;
+                            align-items: center;
+                            flex-shrink: 0;
+                            cursor: pointer;
+                            min-height: 78px;
+                            border-radius: 4px;
+                            padding: 4px 8px;
+                            display: block;
+                            border: 1px solid rgb(13, 92, 182);
                         }
 
                     }
                 }
 
                 .header-scroll.sticky {
-                    // height: 100%;
                     width: 1240px;
                     position: fixed;
                     top: 0;
                     z-index: 3;
                     background-color: rgb(244, 244, 244);
                 }
-                .header-scroll.sticky.mt-50{
+
+                .header-scroll.sticky.mt-50 {
                     top: -90px;
                     position: fixed;
                 }
+
                 .home_infinity_tab_content {
                     background-color: rgb(255, 255, 255);
 
                     .content {
-                        position: relative;
 
+                        // display: none;
                         .tab-content {
+                            display: none !important;
                             display: flex;
                             flex-wrap: wrap;
                             align-self: stretch;
@@ -2060,26 +2074,9 @@ ul {
                             }
                         }
 
-                        #home {
-                            position: absolute;
-                            top: 0;
-                            visibility: visible;
-                            z-index: 1;
-                        }
-                        #sale,
-                        #deal,
-                        #extremely_cheap,
-                        #freeship{
-                            position: absolute;
-                            top: 0;
-                            visibility: hidden;
-                            
-                        }
-                        #women_fashion{
-                            // position: absolute;
-                            // top: 0;
-                            // visibility: hidden;
-                            // display: none;
+                        .tab-content.active {
+                            display: block;
+                            display: flex !important;
                         }
                     }
 
@@ -2092,36 +2089,44 @@ ul {
             }
         }
     }
-    .footer{
+
+    .footer {
         background-color: rgba(255, 255, 255);
-        .footer-container{
+
+        .footer-container {
             width: 1270px;
             margin: auto;
-            .footer-content{
+
+            .footer-content {
                 padding: 40px 15px;
                 display: flex;
                 justify-content: space-between;
-                .block{
+
+                .block {
                     width: 226px;
-                    h4{
+
+                    h4 {
                         margin: 0px 0px 17px;
                         color: rgb(51, 51, 51);
                         font-size: 13px;
                         font-weight: 550;
                         font-stretch: normal;
                         text-transform: uppercase;
-                        
+
                     }
-                    p.hotline{
+
+                    p.hotline {
                         margin-bottom: 10px;
                         color: rgb(196, 1, 26);
                         font-size: 13px;
                         font-weight: 550;
                         line-height: 18px;
-                        a{
+
+                        a {
                             color: rgb(196, 1, 26);
                         }
-                        span.small-text{
+
+                        span.small-text {
                             display: block;
                             margin-bottom: 11px;
                             color: rgb(51, 51, 51);
@@ -2129,59 +2134,70 @@ ul {
                             font-weight: normal;
                         }
                     }
-                    a.small-text{
+
+                    a.small-text {
                         display: block;
                         margin-bottom: 11px;
                         color: rgb(51, 51, 51);
                         font-size: 12px;
                         font-weight: normal;
                     }
-                    p.security{
+
+                    p.security {
                         margin-bottom: 10px;
                         color: rgb(51, 51, 51);
                         font-size: 12px;
                         font-weight: 400;
-                        a{
+
+                        a {
                             color: rgb(51, 51, 51);
                         }
                     }
                 }
             }
-            .footer-address{
+
+            .footer-address {
                 font-size: 12px;
                 padding: 40px 15px;
-                .container{
+
+                .container {
                     padding-left: 20px;
-                    .address{
-                        .address-infor{
+
+                    .address {
+                        .address-infor {
                             width: 492px;
-                            p{
+
+                            p {
                                 line-height: 22px;
                             }
                         }
                     }
                 }
             }
-            .footer-copy{
-                .container{
+
+            .footer-copy {
+                .container {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     padding: 40px 15px;
                     padding-bottom: 0;
-                    div{
-                        h5{
+
+                    div {
+                        h5 {
                             margin: 0px 0px 5px;
                             font-size: 12px;
                             // font-weight: 500;
                         }
-                        p{
+
+                        p {
                             margin: 0px;
                             font-size: 11px;
                             font-weight: 300;
                         }
                     }
-                    .block{
+
+                    .block {
                         display: flex;
                         -webkit-box-align: center;
                         align-items: center;
@@ -2189,6 +2205,6 @@ ul {
                     }
                 }
             }
-        }   
+        }
     }
 }
