@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
     let header_scroll = document.getElementById("header-scroll");
     let heigth = header_scroll.offsetTop + 250;
+    // Lấy chiều cao khi cuộn chuột
     let sticky_content = document.getElementById("sticky-content");
     let search_auto = document.getElementById("search-auto");
     let bg_dark = document.getElementById("bg-dark");
