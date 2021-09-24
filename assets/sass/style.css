@@ -673,6 +673,11 @@ ul {
   color: #242424;
   outline: none;
 }
+#main .modal-box .modal-overlay .modal-content .modal-container .modal-container-left .left-content form p.error {
+  font-size: 13px;
+  color: red;
+  line-height: 30px;
+}
 #main .modal-box .modal-overlay .modal-content .modal-container .modal-container-left .left-content form button {
   margin: 30px 0px 10px;
   outline: none;

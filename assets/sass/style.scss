@@ -838,7 +838,14 @@ ul {
                                         font-size: 24px;
                                         color: rgb(36, 36, 36);
                                         outline: none;
+
                                     }
+                                }
+
+                                p.error {
+                                    font-size: 13px;
+                                    color: red;
+                                    line-height: 30px;
                                 }
 
                                 button {
