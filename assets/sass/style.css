@@ -922,11 +922,11 @@ ul {
   cursor: pointer;
 }
 #main .home-banner-top .content .content-left .slider .dotsbox span.dot.active {
-  border-color: #242424;
+  border-color: #0088ffe3;
 }
 #main .home-banner-top .content .content-left .slider .dotsbox .active,
 #main .home-banner-top .content .content-left .slider .dotsbox .dot:hover {
-  border-color: #242424;
+  border-color: #0785f3e3;
 }
 #main .home-banner-top .content .content-left .slider:hover .prev {
   opacity: 1;
